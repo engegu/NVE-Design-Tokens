@@ -51,9 +51,12 @@
     }
   },
   "box-shadows": {
-    "s": { "value": "0 2px 2px rgb(0 0 0 / 25%)" },
-    "m": { "value": "0 2px 4px rgb(0 0 0 / 25%)" },
-    "top-m": { "value": "0px -4px 16px rgba(0, 0, 0, 0.1)" }
+    "s": { "value": "0 2px 2px rgb(0 0 0 / 25%)", "type": "boxShadow" },
+    "m": { "value": "0 2px 4px rgb(0 0 0 / 25%)", "type": "boxShadow" },
+    "top-m": {
+      "value": "0px -4px 16px rgba(0, 0, 0, 0.1)",
+      "type": "boxShadow"
+    }
   },
   "nve": {
     "colors": {
