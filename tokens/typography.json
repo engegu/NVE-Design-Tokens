@@ -1,0 +1,48 @@
+{
+  "font": {
+    "weight": {
+      "regular": { "value": "400" },
+      "semi-bold": { "value": "600" },
+      "bold": { "value": "700" }
+    },
+    "size": {
+      "xs": { "value": "0.75rem" },
+      "s": { "value": "0.875rem" },
+      "m": { "value": "1rem" },
+      "l": { "value": "1.125rem" },
+      "xl": { "value": "1.25rem" },
+      "2xl": { "value": "1.5rem" },
+      "3xl": { "value": "2.25rem" },
+      "4xl": { "value": "3rem" },
+      "5xl": { "value": "4rem" }
+    }
+  },
+  "line": {
+    "height": {
+      "paragraph": { "value": "150%" },
+      "paragraph-alt": { "value": "175%" },
+      "header": { "value": "125%" }
+    }
+  },
+  "nve": {
+    "font": {
+      "family": { "value": "'Source Sans Pro', sans-serif" },
+      "size": {
+        "xs": { "value": "{font.size.xs.value}" },
+        "s": { "value": "{font.size.s.value}" },
+        "m": { "value": "{font.size.m.value}" },
+        "l": { "value": "{font.size.l.value}" },
+        "xl": { "value": "{font.size.xl.value}" },
+        "2xl": { "value": "{font.size.2xl.value}" },
+        "3xl": { "value": "{font.size.3xl.value}" },
+        "4xl": { "value": "{font.size.4xl.value}" },
+        "5xl": { "value": "{font.size.5xl.value}" }
+      }
+    },
+    "header": {
+      "height": { "value": "80px" },
+      "height-tablet": { "value": "64px" },
+      "height-mobile": { "value": "56px" }
+    }
+  }
+}
