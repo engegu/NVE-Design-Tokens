@@ -1,0 +1,137 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+$colors-button-default: $nve-colors-primary;
+
+.nve-button {
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+
+  padding: 0 $spacing-xl;
+  min-width: 100px;
+  height: 48px;
+
+  border-color: $colors-button-default;
+  border-width: 1px;
+  border-style: solid;
+
+  background-color: $colors-button-default;
+  color: $colors-grey-000;
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
+
+  &:disabled {
+    background-color: $colors-grey-100;
+    border-color: $colors-grey-100;
+    cursor: auto;
+  }
+
+  &:focus-visible {
+    border-color: yellow;
+    border-width: 2px;
+    svg path {
+      stroke: $colors-grey-000;
+    }
+    outline-style: outset;
+  }
+  outline-color: $colors-brand-500;
+}
+
+@media (hover: hover) {
+  .nve-button:hover {
+    background-color: $colors-grey-400;
+    border-color: $colors-grey-400;
+  }
+}
+
+.iconButton {
+  background-color: transparent;
+  border-color: transparent;
+  &:focus-visible svg path {
+    stroke: $colors-grey-000;
+  }
+}
+// .large-button {
+//   height: $hira-sizing-inputField-height-large;
+// }
+.small-button {
+  height: 36px;
+}
+
+//individual styles
+.outline-buttonStyle {
+  border-color: $colors-grey-300;
+  background-color: $colors-grey-000;
+  color: $colors-button-default;
+  svg path {
+    stroke: $colors-button-default;
+  }
+  &:hover {
+    background-color: $colors-brand-000;
+  }
+}
+.ghost-buttonStyle {
+  border-color: transparent;
+  background-color: transparent;
+  color: $colors-button-default;
+  svg path {
+    stroke: $colors-button-default;
+  }
+  &:hover {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+//loading style
+.loading-buttonStyle {
+  cursor: progress;
+  & svg path {
+    stroke: $colors-grey-000;
+  }
+  color: transparent;
+  &::before {
+    color: $colors-grey-300;
+    font-family: FontAwesome;
+    content: "\f1ce";
+    animation: spin 1s infinite linear;
+    position: absolute;
+  }
+  // &.outline-buttonStyle::before {
+  //   color: $colors-button-default;
+  // }
+  // &.ghost-buttonStyle::before {
+  //   color: $colors-button-default;
+  // }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loaderIconStyle {
+  position: absolute;
+}
+
+//overflow-button
+.nve-overflow-button {
+  &::before {
+    font-family: FontAwesome;
+    content: "\f142";
+  }
+  font-size: 1.25rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

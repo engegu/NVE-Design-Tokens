@@ -1,0 +1,18 @@
+.colors {
+  display: flex;
+  flex-direction: column;
+}
+.hiddenli {
+  list-style: none;
+}
+.emptyli {
+  list-style: none;
+  height: 20px;
+}
+.variables-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.variables-section div {
+  min-width: 300px;
+}

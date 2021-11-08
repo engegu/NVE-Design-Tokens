@@ -1,0 +1,123 @@
+@import "./buttons.scss";
+@import "./header.scss";
+@import "./shortStyles.scss";
+@import "../assets/icons/nveIcons.scss";
+
+//header links
+.nve-header-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $nve-colors-primary;
+  text-decoration: none;
+  min-width: 80px;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+  }
+  &.router-link-active {
+    font-weight: $font-weight-semi-bold;
+  }
+  &.nve-header-link-active {
+    font-weight: $font-weight-semi-bold;
+  }
+}
+
+//links
+
+//tooltip
+.nve-tooltip {
+  position: relative;
+  display: inline-block;
+}
+.nve-tooltiptext {
+  visibility: hidden;
+  opacity: 0;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  transition: opacity 0.2s;
+  position: absolute;
+  z-index: 1;
+}
+.nve-tooltiptext:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+.nve-tooltip:hover .nve-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nve-page-layout {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1488px;
+}
+.nve-grid-layout {
+  max-width: 1488px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: $spacing-xl;
+}
+// desktop breakpoint
+@media screen and (max-width: $breakpoints-desktop-large) {
+  .nve-page-layout {
+    margin-left: $spacing-3xl;
+    margin-right: $spacing-3xl;
+  }
+}
+// tablet breakpoint
+@media screen and (max-width: $breakpoints-tablet-medium) {
+  .nve-page-layout {
+    margin-left: $spacing-xl;
+    margin-right: $spacing-xl;
+  }
+  .nve-grid-layout {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: $spacing-l;
+  }
+}
+// mobile breakpoint
+@media screen and (max-width: $breakpoints-mobile-medium) {
+  .nve-page-layout {
+    margin-left: $spacing-l;
+    margin-right: $spacing-l;
+  }
+  .nve-grid-layout {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+// small mobile breakpoint
+@media screen and (max-width: $breakpoints-mobile-small) {
+  .nve-page-layout {
+    margin-left: $spacing-m;
+    margin-right: $spacing-m;
+  }
+  .nve-grid-layout {
+    display: block;
+  }
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

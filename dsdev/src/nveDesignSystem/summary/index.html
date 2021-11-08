@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="summaryStyle.css">
+  </head>
+  <body>
+    <h1>Design system</h1>
+    <section>
+      <div id="files"></div>
+    </section>
+    <section class="variables-section">
+      <div>
+        <h3>DSColors</h3>
+        <ul id="colors" />
+      </div>
+      <div>
+        <h3>NVEColors</h3>
+        <ul id="nveColors" />
+      </div>
+      <div>
+        <h3>dsVariables</h3>
+        <ul id="dsVariables" />
+      </div>
+      <div>
+        <h3>Breakpoints</h3>
+        <ul id="breakpoints" />
+      </div>
+      <div>
+        <h3>NVE</h3>
+        <ul id="nveVariables" />
+      </div>
+    </section>
+  </body>
+  <script>
+    function readCSSFiles() {
+      var rawFile = new XMLHttpRequest();
+      rawFile.open("GET", "../", false);
+      rawFile.onreadystatechange = function ()
+      {
+        if(rawFile.readyState === 4)
+        {
+          if(rawFile.status === 200 || rawFile.status == 0)
+          {
+            var allText = rawFile.responseText;
+            document.getElementById("files").innerHTML = allText;
+          }
+        }
+      }
+      rawFile.send(null);
+    }
+    function readFile(path, containerId) {
+      var rawFile = new XMLHttpRequest();
+      rawFile.open("GET", path, false);
+      rawFile.onreadystatechange = function ()
+      {
+        if(rawFile.readyState === 4)
+        {
+          if(rawFile.status === 200 || rawFile.status == 0) {
+            var allText = rawFile.responseText;
+            var lines = allText.split('\n');
+            document.getElementById(containerId).innerHTML = lines
+              .map(entry=>{
+                if (entry[0]=="@") {
+                  return "<li class='hiddenli'/>"
+                }else if (entry!="\r" && entry!="") {
+                  return "<li>"+ entry +"</li>"
+                } else {
+                  return "<li class='emptyli'/>"
+                }
+              }).join('');
+          }
+        }
+      }
+      rawFile.send(null);
+    }
+    readCSSFiles();
+    readFile("../dsSettings/dsColors.scss", "colors");
+    readFile("../dsSettings/dsVariables.scss", "dsVariables");
+    readFile("../dsSettings/breakpoints.scss", "breakpoints");
+    readFile("../nveSettings/nveVariables.scss", "nveVariables");
+    readFile("../nveSettings/colors.scss", "nveColors");
+  </script>
+</html>

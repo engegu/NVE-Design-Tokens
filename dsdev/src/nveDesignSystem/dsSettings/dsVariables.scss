@@ -1,0 +1,63 @@
+// $spacing-xs: 2px;
+// $spacing-s: 4px;
+// $spacing-m: 8px;
+// $spacing-l: 12px;
+// $spacing-xl: 16px;
+// $spacing-2xl: 24px;
+// $spacing-3xl: 40px;
+// $spacing-4xl: 64px;
+// $spacing-5xl: 104px;
+// $spacing-6xl: 168px;
+
+// $spacing: (
+//   xs: $spacing-xs,
+//   s: $spacing-s,
+//   m: $spacing-m,
+//   l: $spacing-l,
+//   xl: $spacing-xl,
+//   2xl: $spacing-2xl,
+//   3xl: $spacing-3xl,
+//   4xl: $spacing-4xl,
+//   5xl: $spacing-5xl,
+//   6xl: $spacing-6xl,
+// );
+
+// $margin-page-bottom-s: 80px;
+// $margin-page-bottom-m: 120px;
+// $margin-page-bottom-s: 160px;
+
+// $borderRadius-xs: 2px;
+// $borderRadius-s: 4px;
+// $borderRadius-m: 8px;
+// $borderRadius-l: 16px;
+
+// $box-shadow-s: 0 2px 2px rgb(0 0 0 / 25%);
+// $box-shadow-m: 0 2px 4px rgb(0 0 0 / 25%);
+// $box-shadow-top-m: 0px -4px 16px rgba(0, 0, 0, 0.1);
+
+// $font-weight-regular: 400;
+// $font-weight-semiBold: 600;
+// $font-weight-bold: 700;
+
+// $font-size-xs: 0.75rem; //12px
+// $font-size-s: 0.875rem; //14px
+// $font-size-m: 1rem; //16px
+// $font-size-l: 1.125rem; //18px
+// $font-size-xl: 1.25rem; //20px
+// $font-size-2xl: 1.5rem; //24px
+// $font-size-3xl: 2.25rem; //24px
+// $font-size-4xl: 3rem; //48px
+// $font-size-5xl: 4rem; //64px
+
+// $line-height-paragraph: 150%;
+// $line-height-paragraph-alt: 175%;
+// $line-height-header: 125%;
+
+// $max-width-content: 112ch;
+// $max-width-container: 1488px;
+
+// :root {
+//   @each $space, $value in $spacing {
+//     --spacing-#{$space}: #{$value};
+//   }
+// }

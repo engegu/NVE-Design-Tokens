@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+.nve-font-small {
+  font-size: $nve-font-size-m;
+  line-height: $line-height-paragraph;
+  font-weight: $font-weight-regular;
+}
+
+.nve-font-regular {
+  font-size: $nve-font-size-m;
+  line-height: $line-height-paragraph;
+  font-weight: $font-weight-regular;
+}
+
+.nve-font-large {
+  font-size: $nve-font-size-l;
+  line-height: $line-height-paragraph;
+  font-weight: $font-weight-regular;
+}
+
+@mixin nve-heading {
+  font-weight: $font-weight-semi-bold;
+  line-height: $line-height-header;
+}
+
+.nve-heading {
+  &-xs {
+    @include nve-heading();
+    font-size: $nve-font-size-m;
+  }
+  &-s {
+    @include nve-heading();
+    font-size: $nve-font-size-l;
+  }
+  &-m {
+    @include nve-heading();
+    font-size: $nve-font-size-xl;
+  }
+  &-l {
+    @include nve-heading();
+    font-size: $nve-font-size-2xl;
+  }
+  &-xl {
+    @include nve-heading();
+    font-size: $nve-font-size-3xl;
+  }
+  &-2xl {
+    @include nve-heading();
+    font-size: $nve-font-size-4xl;
+  }
+  &-3xl {
+    @include nve-heading();
+    font-size: $nve-font-size-5xl;
+  }
+}
+
+.heavy {
+  font-weight: $font-weight-bold;
+}
+
+.nve-caption-small {
+  font-size: $nve-font-size-xs;
+}
+.nve-caption-regular {
+  font-size: $nve-font-size-s;
+}
+
+.nve-error-text {
+  color: $colors-error-200;
+}
+
+.font-size-xs {
+  font-size: $nve-font-size-xs;
+}
+.font-size-s {
+  font-size: $nve-font-size-s;
+}
+.font-size-m {
+  font-size: $nve-font-size-m;
+}
+.font-size-l {
+  font-size: $nve-font-size-l;
+}
+.font-size-xl {
+  font-size: $nve-font-size-xl;
+}
+.font-size-2xl {
+  font-size: $nve-font-size-2xl;
+}
+.font-size-3xl {
+  font-size: $nve-font-size-3xl;
+}
+.font-size-4xl {
+  font-size: $nve-font-size-4xl;
+}
+.font-size-5xl {
+  font-size: $nve-font-size-5xl;
+}
+
+.font-weight-regular {
+  font-size: $font-weight-regular;
+}
+.font-weight-semi-bold {
+  font-size: $font-weight-semi-bold;
+}
+.font-weight-semi-bold {
+  font-size: $font-weight-bold;
+}

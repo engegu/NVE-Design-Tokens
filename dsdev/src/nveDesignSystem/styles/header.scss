@@ -1,0 +1,41 @@
+.nve-header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  z-index: 20;
+
+  height: $nve-header-height;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.02);
+
+  grid-column: 1 / end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > div:first-child {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nve-header-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: $spacing-m $spacing-m $spacing-m 0;
+  color: $colors-grey-500;
+  font-size: 1.25rem;
+  font-weight: $font-weight-semi-bold;
+  span {
+    margin-left: $spacing-xl;
+  }
+}
+
+.nve-logo-background {
+  width: 80px;
+  height: 80px;
+  background-color: #c8102e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
