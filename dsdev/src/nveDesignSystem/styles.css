@@ -127,7 +127,7 @@
   font-family: "Source Sans Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: pink;
+  color: #333333;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -556,10 +556,10 @@
   padding: 0 16px;
   min-width: 100px;
   height: 48px;
-  border-color: pink;
+  border-color: #333333;
   border-width: 1px;
   border-style: solid;
-  background-color: pink;
+  background-color: #333333;
   color: #ffffff;
   outline-color: #2069E6;
 }
@@ -602,10 +602,10 @@
 .outline-buttonStyle {
   border-color: #858585;
   background-color: #ffffff;
-  color: pink;
+  color: #333333;
 }
 .outline-buttonStyle svg path {
-  stroke: pink;
+  stroke: #333333;
 }
 .outline-buttonStyle:hover {
   background-color: #F0F5FF;
@@ -614,10 +614,10 @@
 .ghost-buttonStyle {
   border-color: transparent;
   background-color: transparent;
-  color: pink;
+  color: #333333;
 }
 .ghost-buttonStyle svg path {
-  stroke: pink;
+  stroke: #333333;
 }
 .ghost-buttonStyle:hover {
   background-color: transparent;
@@ -685,7 +685,7 @@
   align-items: center;
   text-decoration: none;
   padding: 8px 8px 8px 0;
-  color: pink;
+  color: #333333;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -739,7 +739,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: pink;
+  color: #333333;
   text-decoration: none;
   min-width: 80px;
 }
