@@ -36,7 +36,7 @@
         "type": "color"
       },
       "500": {
-        "value": "pink",
+        "value": "#333333",
         "type": "color"
       },
       "000-transparent": {

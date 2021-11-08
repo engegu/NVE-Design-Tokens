@@ -10,4 +10,4 @@ Design systemet benytter seg av style dictionary [](https://sass-lang.com/guide)
 
 ### SASS loader
 
-For å oppdatere stilarket med riktige variabler kjøres `sass index.scss styles.css` i mappen `dsdev/src/nveDesignSystem`
+For å oppdatere stilarket med riktige variabler kjøres `sass src/nveDesignSystem/index.scss src/nveDesignSystem/styles.css` i mappen `dsdev`. Dette generer nytt stilark.
