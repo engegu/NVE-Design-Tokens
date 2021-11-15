@@ -19,12 +19,12 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - working-directory: ./dsdev
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+    - uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Use Node.js ${{ matrix.node-version }}
+      working-directory: ./dsdev
     - run: |
         cd dsdev
         npm ci
