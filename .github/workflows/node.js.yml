@@ -12,32 +12,8 @@ on:
 jobs:
   npmInstall:
     runs-on: ubuntu-latest
-    defaults:
-      run: 
-        working-directory: dsdev
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: gha-utilities/sass-build@v0.4.7
         with:
-          node-version: '14'
-      - run: | 
-          npm install
-          npm install -g sass-loader node-sass
-          sass --version
-#   generateSass:
-#     needs: npmInstall
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - uses: actions/setup-node@v2
-      
-#     - name: Use Node.js ${{ matrix.node-version }}
-#     - uses: actions/setup-node@v2
-#       with:
-#         node-version: ${{ matrix.node-version }}
-#         cache: 'npm'
-#     - run: |
-#         cd dsdev
-#         npm ci
-#     - run: sass src/nveDesignSystem/index.scss src/nveDesignSystem/styles.css
-#       working-directory: ./dsdev
+          source: dsdev/src/nveDesignSystem/index.scss
+          destination: dsdev/src/nveDesignSystem/styles.css
