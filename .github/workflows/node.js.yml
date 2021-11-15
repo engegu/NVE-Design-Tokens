@@ -19,15 +19,13 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: move to dir
-      uses: actions/checkout@v2
-    - run: cd dsdev
-    
+    - working-directory: ./dsdev
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: | 
+    - run: |
+        cd dsdev
         npm ci
     - run: sass src/nveDesignSystem/index.scss src/nveDesignSystem/styles.css
