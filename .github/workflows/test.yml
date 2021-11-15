@@ -26,6 +26,4 @@ jobs:
       - run: npm install
         working-directory: dsdev
       - run: npm install -g style-dictionary
-        working-directory: dsdev
       - run: style-dictionary build
-        working-directory: dsdev
