@@ -27,5 +27,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: dsdev/package-lock.json
-    - run: npm install -g style-dictionary
+    - run: npm install
     - run: style-dictionary build
