@@ -22,6 +22,7 @@ jobs:
           node-version: '14'
       - run: | 
           npm install
+          npm install -g sass-loader node-sass
           sass --version
 #   generateSass:
 #     needs: npmInstall
