@@ -23,7 +23,9 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npm install
+      - run: |
+          cd dsdev
+          npm install
 #     - name: Use Node.js ${{ matrix.node-version }}
 #     - uses: actions/setup-node@v2
 #       with:
