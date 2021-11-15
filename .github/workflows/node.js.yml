@@ -26,6 +26,7 @@ jobs:
       - run: |
           cd dsdev
           npm install
+          sass src/nveDesignSystem/index.scss src/nveDesignSystem/styles.css
 #     - name: Use Node.js ${{ matrix.node-version }}
 #     - uses: actions/setup-node@v2
 #       with:
