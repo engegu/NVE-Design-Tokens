@@ -15,6 +15,6 @@ jobs:
     steps:
       - uses: gha-utilities/sass-build@v0.4.7
         with:
-          source: dsdev/src/nveDesignSystem/index.scss
-          destination: dsdev/src/nveDesignSystem/styles.css
+          source: ../../dsdev/src/nveDesignSystem/index.scss
+          destination: ../../dsdev/src/nveDesignSystem/styles.css
           
