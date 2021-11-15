@@ -11,9 +11,9 @@ on:
 
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: dsdev
+    # defaults:
+    #   run:
+    #     working-directory: dsdev
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -22,5 +22,5 @@ jobs:
         with:
           node-version: 14
           cache: "npm"
-          # cache-dependency-path: dsdev/package-lock.json
+          cache-dependency-path: dsdev/package-lock.json
       - run: npm install
