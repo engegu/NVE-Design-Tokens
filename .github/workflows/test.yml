@@ -23,5 +23,4 @@ jobs:
           node-version: 14
           cache: "npm"
           # cache-dependency-path: dsdev/package-lock.json
-      - run: |
-        npm install
+      - run: npm install
