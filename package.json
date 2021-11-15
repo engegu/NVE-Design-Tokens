@@ -1,7 +1,0 @@
-{
-  "name": "dsdev",
-  "version": "0.0.0",
-  "scripts": {
-    "build": "cd dsdev && npm install && style-dictionary build"
-  }
-}
