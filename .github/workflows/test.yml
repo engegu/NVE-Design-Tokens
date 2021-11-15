@@ -25,5 +25,7 @@ jobs:
           cache-dependency-path: dsdev/package-lock.json
       - run: npm install
         working-directory: dsdev
+      - run: npm install style-dictionary
+        working-directory: dsdev
       - run: style-dictionary build
         working-directory: dsdev
