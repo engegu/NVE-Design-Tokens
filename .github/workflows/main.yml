@@ -16,13 +16,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: npm install
+      - name: npm install, update sass file
         run: |
           cd dsdev
           npm install
-
-      - name: generate sass
-        run: sass src/nveDesignSystem/index.scss src/nveDesignSystem/styles.css
+          sass src/nveDesignSystem/index.scss src/nveDesignSystem/styles.css
         
       - name: build style-dictionary
         run: |
