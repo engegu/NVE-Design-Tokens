@@ -24,8 +24,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Use Node.js ${{ matrix.node-version }}
-      working-directory: ./dsdev
     - run: |
         cd dsdev
         npm ci
     - run: sass src/nveDesignSystem/index.scss src/nveDesignSystem/styles.css
+      working-directory: ./dsdev
