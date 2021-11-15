@@ -21,10 +21,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
+#         with:
+#           node-version: '14'
+      - working-directory: ./dsdev
       - run: |
-          cd dsdev
           npm install
           sass src/nveDesignSystem/index.scss src/nveDesignSystem/styles.css
 #     - name: Use Node.js ${{ matrix.node-version }}
