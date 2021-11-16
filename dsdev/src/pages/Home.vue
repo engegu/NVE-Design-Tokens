@@ -10,26 +10,6 @@
         </span>
       </div>
     </section>
-    <!-- <section class="headings mt-3xl">
-      <div>
-        <h3 class="nve-heading-xs">heading xs</h3>
-        <h3 class="nve-heading-s">heading s</h3>
-        <h3 class="nve-heading-m">heading m</h3>
-        <h3 class="nve-heading-l">heading l</h3>
-        <h3 class="nve-heading-xl">heading xl</h3>
-        <h3 class="nve-heading-2xl">heading 2xl</h3>
-        <h3 class="nve-heading-3xl">heading 3xl</h3>
-      </div>
-      <div>
-        <h3 class="heavy nve-heading-xs">heading xs</h3>
-        <h3 class="heavy nve-heading-s">heading s</h3>
-        <h3 class="heavy nve-heading-m">heading m</h3>
-        <h3 class="heavy nve-heading-l">heading l</h3>
-        <h3 class="heavy nve-heading-xl">heading xl</h3>
-        <h3 class="heavy nve-heading-2xl">heading 2xl</h3>
-        <h3 class="heavy nve-heading-3xl">heading 3xl</h3>
-      </div>
-    </section> -->
   </div>
 </template>
 
