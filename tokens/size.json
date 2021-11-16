@@ -1,5 +1,6 @@
 {
   "spacing": {
+    "xxs": { "value": "1px" },
     "xs": { "value": "2px" },
     "s": { "value": "4px" },
     "m": { "value": "8px" },
