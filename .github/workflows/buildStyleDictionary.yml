@@ -21,6 +21,7 @@ jobs:
         working-directory: dsdev
       - run: npm install -g style-dictionary
       - run: style-dictionary build
+      - run: printf '%b\n' "$(cat tokens/size.json)"
       - run: printf '%b\n' "$(cat dsdev/src/nveDesignSystem/tokens/variables.css)"
   # commitPush:
   #   needs: buildStyle
