@@ -2,6 +2,7 @@
   "spacing": {
     "xs": { "value": "2px" },
     "s": { "value": "4px" },
+    "ms": { "value": "6px" },
     "m": { "value": "8px" },
     "l": { "value": "12px" },
     "xl": { "value": "16px" },
