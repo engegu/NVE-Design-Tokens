@@ -3,8 +3,8 @@ name: buildStyleDictionary
 on:
   push:
     branches: [main]
-    # paths:
-    #   - "tokens/**"
+    paths:
+      - "tokens/**"
 
 jobs:
   buildStyle:
