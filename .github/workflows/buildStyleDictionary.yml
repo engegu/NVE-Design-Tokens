@@ -3,8 +3,8 @@ name: buildStyleDictionary
 on:
   push:
     branches: [main]
-    paths:
-      - "tokens/**"
+    # paths:
+    #   - "tokens/**"
 
 jobs:
   buildStyle:
@@ -21,14 +21,15 @@ jobs:
         working-directory: dsdev
       - run: npm install -g style-dictionary
       - run: style-dictionary build
-  commitPush:
-    needs: buildStyle
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: |
-          git config --global user.name 'halvorKostveit'
-          git config --global user.email 'halvorKostveit@users.noreply.github.com'
-          git add .
-          git commit -am"Automated commit of dictionary build"
-          git push
+      - run: printf '%b\n' "$(cat dsdev/src/nveDesignSystem/tokens/variables.css)"
+  # commitPush:
+  #   needs: buildStyle
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - run: |
+  #         git config --global user.name 'halvorKostveit'
+  #         git config --global user.email 'halvorKostveit@users.noreply.github.com'
+  #         git add .
+  #         git commit -am"Automated commit of dictionary build"
+  #         git push
