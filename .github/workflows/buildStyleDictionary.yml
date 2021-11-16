@@ -26,7 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: commit and push
       - run: |
           git config --global user.name 'halvorKostveit'
           git config --global user.email 'halvorKostveit@users.noreply.github.com'
