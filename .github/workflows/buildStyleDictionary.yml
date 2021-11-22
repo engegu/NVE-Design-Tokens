@@ -1,0 +1,36 @@
+name: buildStyleDictionary
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tokens/**"
+
+jobs:
+  buildStyle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          cache: "npm"
+          cache-dependency-path: dsdev/package-lock.json
+      - run: npm install
+        working-directory: dsdev
+      - run: npm install -g style-dictionary
+      - run: style-dictionary build
+      - run: printf '%b\n' "$(cat tokens/size.json)"
+      - run: printf '%b\n' "$(cat dsdev/src/nveDesignSystem/tokens/variables.css)"
+  # commitPush:
+  #   needs: buildStyle
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - run: |
+  #         git config --global user.name 'halvorKostveit'
+  #         git config --global user.email 'halvorKostveit@users.noreply.github.com'
+  #         git add .
+  #         git commit -am"Automated commit of dictionary build"
+  #         git push

@@ -1,25 +1,25 @@
 <template>
-  <div class="home-page nve-page-layout">
-    <h1>Hjem</h1>
+  <div class="advanced-page nve-page-layout">
+    <h1>Avanserte komponenter</h1>
     <section class="mt-xl">
       <div>
-        <h2>Tooltip</h2>
-        <span class="nve-tooltip">
-          Noe tekst her
-          <span class="nve-tooltiptext">Tooltip</span>
-        </span>
+        <h2>Accordian</h2>
+        <Accordan />
       </div>
     </section>
   </div>
 </template>
 
 <script lang="ts">
-export default {};
+import Accordan from "../components/Accordian.vue";
+
+export default {
+  components: { Accordan },
+};
 </script>
 
 <style lang="scss">
-.home-page {
-  padding: 0 $spacing-xl;
+.advanced-page {
   section {
     display: flex;
     div {

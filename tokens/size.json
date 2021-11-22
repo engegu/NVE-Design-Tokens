@@ -3,6 +3,7 @@
     "xs": { "value": "2px" },
     "s": { "value": "4px" },
     "m": { "value": "8px" },
+    "ls": { "value": "10px" },
     "l": { "value": "12px" },
     "xl": { "value": "16px" },
     "2xl": { "value": "24px" },

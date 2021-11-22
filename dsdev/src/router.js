@@ -3,6 +3,8 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "./pages/Home.vue";
 import Buttons from "./pages/Buttons.vue";
 import Typography from "./pages/Typography.vue";
+import Advanced from "./pages/Advanced.vue";
+import Icons from "./pages/Icons.vue";
 
 const routes = [
   {
@@ -19,6 +21,16 @@ const routes = [
     path: "/typography",
     name: "Typography",
     component: Typography,
+  },
+  {
+    path: "/advanced",
+    name: "Advanced",
+    component: Advanced,
+  },
+  {
+    path: "/icons",
+    name: "Icons",
+    component: Icons,
   },
 ];
 

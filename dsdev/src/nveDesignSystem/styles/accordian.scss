@@ -1,0 +1,31 @@
+.nve-accordian {
+  margin: 0;
+  padding: 0;
+  border: 2px solid hsl(0, 0%, 82%);
+  border-radius: 7px;
+  width: 20em;
+  .accordion-trigger {
+    background: none;
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    border: none;
+    padding: 1em 1.5em;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    outline: none;
+    .accordion-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .accordion-panel {
+    padding: $spacing-l;
+  }
+  .accordion-panel[hidden] {
+    display: none;
+  }
+}
