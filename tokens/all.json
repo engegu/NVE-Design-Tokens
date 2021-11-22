@@ -46,31 +46,31 @@
       },
       "nve-size": {
         "xs": {
-          "value": "{global-size.xs.value}"
+          "value": "{nve-tokens.font.global-size.xs.value}"
         },
         "s": {
-          "value": "{global-size.s.value}"
+          "value": "{nve-tokens.font.global-size.s.value}"
         },
         "m": {
-          "value": "{global-size.m.value}"
+          "value": "{nve-tokens.font.global-size.m.value}"
         },
         "l": {
-          "value": "{global-size.l.value}"
+          "value": "{nve-tokens.font.global-size.l.value}"
         },
         "xl": {
-          "value": "{global-size.xl.value}"
+          "value": "{nve-tokens.font.global-size.xl.value}"
         },
         "2xl": {
-          "value": "{global-size.2xl.value}"
+          "value": "{nve-tokens.font.global-size.2xl.value}"
         },
         "3xl": {
-          "value": "{global-size.3xl.value}"
+          "value": "{nve-tokens.font.global-size.3xl.value}"
         },
         "4xl": {
-          "value": "{global-size.4xl.value}"
+          "value": "{nve-tokens.font.global-size.4xl.value}"
         },
         "5xl": {
-          "value": "{global-size.5xl.value}"
+          "value": "{nve-tokens.font.global-size.5xl.value}"
         }
       }
     },
