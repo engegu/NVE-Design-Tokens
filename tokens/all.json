@@ -46,31 +46,31 @@
       },
       "nve-size": {
         "xs": {
-          "value": "{font.global-size.xs.value}"
+          "value": "{global-size.xs.value}"
         },
         "s": {
-          "value": "{font.global-size.s.value}"
+          "value": "{global-size.s.value}"
         },
         "m": {
-          "value": "{font.global-size.m.value}"
+          "value": "{global-size.m.value}"
         },
         "l": {
-          "value": "{font.global-size.l.value}"
+          "value": "{global-size.l.value}"
         },
         "xl": {
-          "value": "{font.global-size.xl.value}"
+          "value": "{global-size.xl.value}"
         },
         "2xl": {
-          "value": "{font.global-size.2xl.value}"
+          "value": "{global-size.2xl.value}"
         },
         "3xl": {
-          "value": "{font.global-size.3xl.value}"
+          "value": "{global-size.3xl.value}"
         },
         "4xl": {
-          "value": "{font.global-size.4xl.value}"
+          "value": "{global-size.4xl.value}"
         },
         "5xl": {
-          "value": "{font.global-size.5xl.value}"
+          "value": "{global-size.5xl.value}"
         }
       }
     },
