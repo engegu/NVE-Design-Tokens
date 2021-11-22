@@ -12,7 +12,7 @@
           "value": "700"
         }
       },
-      "size": {
+      "global-size": {
         "xs": {
           "value": "0.75rem"
         },
@@ -40,6 +40,38 @@
         "5xl": {
           "value": "4rem"
         }
+      },
+      "family": {
+        "value": "'Source Sans Pro', sans-serif"
+      },
+      "nve-size": {
+        "xs": {
+          "value": "{font.global-size.xs.value}"
+        },
+        "s": {
+          "value": "{font.global-size.s.value}"
+        },
+        "m": {
+          "value": "{font.global-size.m.value}"
+        },
+        "l": {
+          "value": "{font.global-size.l.value}"
+        },
+        "xl": {
+          "value": "{font.global-size.xl.value}"
+        },
+        "2xl": {
+          "value": "{font.global-size.2xl.value}"
+        },
+        "3xl": {
+          "value": "{font.global-size.3xl.value}"
+        },
+        "4xl": {
+          "value": "{font.global-size.4xl.value}"
+        },
+        "5xl": {
+          "value": "{font.global-size.5xl.value}"
+        }
       }
     },
     "line": {
@@ -56,40 +88,7 @@
       }
     },
     "nve": {
-      "font": {
-        "family": {
-          "value": "'Source Sans Pro', sans-serif"
-        },
-        "size": {
-          "xs": {
-            "value": "{font.size.xs.value}"
-          },
-          "s": {
-            "value": "{font.size.s.value}"
-          },
-          "m": {
-            "value": "{font.size.m.value}"
-          },
-          "l": {
-            "value": "{font.size.l.value}"
-          },
-          "xl": {
-            "value": "{font.size.xl.value}"
-          },
-          "2xl": {
-            "value": "{font.size.2xl.value}"
-          },
-          "3xl": {
-            "value": "{font.size.3xl.value}"
-          },
-          "4xl": {
-            "value": "{font.size.4xl.value}"
-          },
-          "5xl": {
-            "value": "{font.size.5xl.value}"
-          }
-        }
-      },
+      "font": {},
       "header": {
         "height": {
           "value": "80px"
